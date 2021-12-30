@@ -1,0 +1,26 @@
+main {
+    display:flex;
+ }
+ header {
+    display:flex;
+    justify-content: space-between;
+    background: blue;
+ }
+
+ article {
+    flex:1 1 75%;
+    order:2;
+ }
+
+ #nav {
+    flex: 1 1 25%;
+    order:1;
+    background-color: grey;
+ }
+
+ .profil {
+    line-height: 20px;
+ }
+
+ 
+

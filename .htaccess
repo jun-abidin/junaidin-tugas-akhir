@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+   RewriteEngine On
+
+   RewriteCond %{REQUEST_FILENAME}  -f [OR]
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteRule ^home/(.*)$ index.php?data=$1 [L,QSA]
+   ErrorDocument 404 https://localhost/junaidin/home/page   
+
+</IfModule>
